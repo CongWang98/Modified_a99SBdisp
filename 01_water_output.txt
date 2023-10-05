@@ -1,0 +1,60 @@
+Setting the LD random seed to -170430741
+
+Generated 3159 of the 3160 non-bonded parameter combinations
+
+Generated 3160 of the 3160 1-4 parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'SOL'
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are: 12759      Water residues
+
+The largest distance between excluded atoms is 0.152 nm
+Using a fourier grid of 152x152x152, spacing 0.054 0.054 0.054
+
+Estimate for the relative computational load of the PME mesh part: 0.70
+
+This run will generate roughly 4 Mb of data
+folder = 01_water
+gmxPath =  /home/gridsan/congwang/software/gromacs/bin/gmx
+gromacsTopDir = /home/gridsan/congwang/code/fixed_a99SBdisp
+platformName = Reference
+precision = double
+###################### gromacs VS original openmm ######################
+
+Relative force error
+max: 2.0
+mean:  0.5059819973187331
+median: 0.008410105317322423
+
+Projection
+mean: [0.75001708]
+min: [0.]
+max: [1.16409444]
+
+Potential energy
+	gromacs (kj/mol)	openmm (kj/mol)	relative error
+0.0	0.0	0.0
+0.0	0.0	0.0
+0.0	0.0	0.0
+-261043.14	-260697.01740210206	0.0013259210638438886
+
+###################### gromacs VS modified openmm ######################
+
+Relative force error
+max: 2.0
+mean:  0.5000413743040043
+median: 5.5850531895808785e-05
+
+Projection
+mean: [0.74999831]
+min: [0.]
+max: [1.00099664]
+
+Potential energy
+	gromacs (kj/mol)	openmm (kj/mol)	relative error
+0.0	0.0	0.0
+0.0	0.0	0.0
+0.0	0.0	0.0
+-261043.14	-261018.51931229123	9.431654748246783e-05

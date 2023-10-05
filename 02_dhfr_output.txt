@@ -1,0 +1,59 @@
+Setting the LD random seed to -1762275589
+
+Generated 3159 of the 3160 non-bonded parameter combinations
+
+Generated 3160 of the 3160 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein'
+Analysing residue names:
+There are:   184    Protein residues
+Analysing Protein...
+
+The largest distance between excluded atoms is 0.417 nm
+Using a fourier grid of 152x152x152, spacing 0.054 0.054 0.054
+
+Estimate for the relative computational load of the PME mesh part: 0.94
+
+This run will generate roughly 0 Mb of data
+folder = 02_dhfr
+gmxPath =  /home/gridsan/congwang/software/gromacs/bin/gmx
+gromacsTopDir = /home/gridsan/congwang/code/fixed_a99SBdisp
+platformName = Reference
+precision = double
+###################### gromacs VS original openmm ######################
+
+Relative force error
+max: 1.9934711131270222
+mean:  0.1388587654350579
+median: 0.04754960806311786
+
+Projection
+mean: [0.96048403]
+min: [-1.60403735]
+max: [2.16054658]
+
+Potential energy
+	gromacs (kj/mol)	openmm (kj/mol)	relative error
+14086.7	14086.73688689976	2.618562172782704e-06
+1482.74	1482.7374457422154	1.7226606044184367e-06
+8085.504	8085.524933379964	2.589001250130517e-06
+-22226.968999999994	-11402.388602653418	0.48700209179877735
+
+###################### gromacs VS modified openmm ######################
+
+Relative force error
+max: 0.0018869069097078776
+mean:  8.502286105945511e-05
+median: 3.641771546038722e-05
+
+Projection
+mean: [0.99999794]
+min: [0.99882145]
+max: [1.00149629]
+
+Potential energy
+	gromacs (kj/mol)	openmm (kj/mol)	relative error
+14086.7	14086.73688689976	2.618562172782704e-06
+1482.74	1482.7374457422154	1.7226606044184367e-06
+8085.504	8085.524933379964	2.589001250130517e-06
+-22226.968999999994	-22226.50771235237	2.0753511089342698e-05

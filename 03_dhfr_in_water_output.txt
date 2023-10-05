@@ -1,0 +1,70 @@
+Setting the LD random seed to 1593489629
+
+Generated 3159 of the 3160 non-bonded parameter combinations
+
+Generated 3160 of the 3160 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein'
+
+Excluding 1 bonded neighbours molecule type 'SOL'
+
+Excluding 1 bonded neighbours molecule type 'NA'
+
+Excluding 1 bonded neighbours molecule type 'CL'
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are:   184    Protein residues
+There are: 12759      Water residues
+There are:    76        Ion residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+The largest distance between excluded atoms is 0.417 nm
+Using a fourier grid of 152x152x152, spacing 0.054 0.054 0.054
+
+Estimate for the relative computational load of the PME mesh part: 0.66
+
+This run will generate roughly 5 Mb of data
+folder = 03_dhfr_in_water
+gmxPath =  /home/gridsan/congwang/software/gromacs/bin/gmx
+gromacsTopDir = /home/gridsan/congwang/code/fixed_a99SBdisp
+platformName = Reference
+precision = double
+###################### gromacs VS original openmm ######################
+
+Relative force error
+max: 2.0
+mean:  0.4834530107877927
+median: 0.008627739478847726
+
+Projection
+mean: [0.76267632]
+min: [-0.19687714]
+max: [2.12618836]
+
+Potential energy
+	gromacs (kj/mol)	openmm (kj/mol)	relative error
+14086.8	14086.73688689976	4.480300724025804e-06
+1482.74	1482.7374457422154	1.7226606044184367e-06
+8085.513	8085.524933379964	1.4758964538082794e-06
+-167339.65999999992	-156146.56286832434	0.06688848974400677
+
+###################### gromacs VS modified openmm ######################
+
+Relative force error
+max: 2.0
+mean:  0.47170632672462015
+median: 5.342818238604576e-05
+
+Projection
+mean: [0.7641663]
+min: [0.]
+max: [1.00125968]
+
+Potential energy
+	gromacs (kj/mol)	openmm (kj/mol)	relative error
+14086.8	14086.73688689976	4.480300724025804e-06
+1482.74	1482.7374457422154	1.7226606044184367e-06
+8085.513	8085.524933379964	1.4758964538082794e-06
+-167339.65999999992	-167288.021766894	0.00030858335140584124

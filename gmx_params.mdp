@@ -1,0 +1,26 @@
+integrator	= md
+dt		= 0.001
+nsteps		= 0	
+nstxout 	= 0
+nstfout		= 1	
+nstenergy	= 1
+nstxtcout	= 0		
+
+
+nstlist		= 1
+ns_type		= simple
+rlist		= 0.9
+vdwtype		= cut-off
+cutoff-scheme   = Verlet
+coulombtype	= pme
+pme-order       = 5
+fourier-nx      = 152
+fourier-ny      = 152
+fourier-nz      = 152
+rcoulomb	= 0.9
+rvdw		= 0.9
+constraints	= None
+pbc		= xyz
+dispcorr        = EnerPres
+vdw-modifier    = None
+coulomb-modifier= None
